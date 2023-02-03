@@ -10,9 +10,9 @@
 </template>
 
 <style lang="scss">
-@import "assets/scss/main.scss";
-#app{
-    background-color: $main6;
-    height: 100vh;
-}
+// @import "assets/scss/main.scss";
+// #app{
+//     background-color: $main6;
+//     height: 100vh;
+// }
 </style>
