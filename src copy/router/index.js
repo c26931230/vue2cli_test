@@ -15,6 +15,21 @@ const routes = [
     name: 'todo',
     component: () => import('../views/TodoListView.vue')
   },
+  {
+    path: '/todoLocal',
+    name: 'todoLocal',
+    component: () => import('../views/TodoListView(LocalStorage).vue')
+  },
+  {
+    path: '/PubSub',
+    name: 'PubSub',
+    component: () => import('../views/PubSub.vue')
+  },
+  {
+    path: '/Count',
+    name: 'CountView',
+    component: () => import('../views/CountView.vue')
+  },
 
 ]
 
