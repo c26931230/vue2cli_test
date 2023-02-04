@@ -3,17 +3,22 @@
         <div class="item">
             <h3>{{ title }}</h3>
             <!-- 插槽 -->
-            <slot>默認值</slot>
-            <ul>
+            <slot :games="games" msg="hello">默認值</slot>
+            <!-- <ul>
                 <li v-for="(item,index) in listData" :key="index">{{ item }}</li>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </template>
 <script>
 export default{
     name:'MyCategory',
-    props:['title','listData'],
+    props:['title'],
+    data() {
+    return {
+      games:['game1','game2','game3','game4'],
+    }
+  },
 }
 </script>
 <style lang="scss">
