@@ -9,21 +9,12 @@
                 <router-link to="/home/message" class="nav-link" active-class="active">Message</router-link>
             </li>
         </ul>
-        <!-- include是組件名 -->
-        <!-- 緩存多個 -->
-        <keep-alive :include="['MyNews','MyMessage']">
-        <!-- 緩存1個 -->
-        <!-- <keep-alive include="MyNews"> -->
-            <router-view></router-view>
-        </keep-alive>
+        <router-view></router-view>
     </div>
 </template>
 <script>
 export default {
     name: 'MyHome',
-    mounted() {
-        console.log(this.$route);
-    },
 }
 
 </script>

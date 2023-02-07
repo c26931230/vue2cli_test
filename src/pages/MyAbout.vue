@@ -6,12 +6,20 @@
 <script>
 export default{
     name:'MyAbout',
-    beforeDestroy(){
-        console.log('About 即將銷毀');
+    mounted(){},
+    // 通過路由規則進入組件被調用
+    beforeRouteEnter(to,from,next){
+        console.log(to,from,'beforeRouteEnter ==about');
+        if (localStorage.getItem("school") === 'NKUHT') {
+            next()
+          } else {
+            alert('錯誤名稱')
+          }
     },
-    mounted(){
-        console.log('About掛載完畢');
-    }
+    // 通過路由規則離開組件被調用
+    beforeRouteLeave(to,from,next){
+        next()
+    },
 }
 </script>
 <style lang="scss">

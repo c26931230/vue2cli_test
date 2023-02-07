@@ -57,8 +57,6 @@ const routes = [
 ]
 
 const router = new VueRouter({
-  // mode:'hash',
-  mode:'history',
   routes
 })
 // 全局前置路由守衛-初始化被調用和每次路由切換前被調用

@@ -21,9 +21,6 @@
 <script>
 export default {
     name: 'MyHome',
-    mounted() {
-        console.log(this.$route);
-    },
 }
 
 </script>
